@@ -13,13 +13,16 @@ function makeTreeMenu() {
     let html = ``;
     for(let index = 0; index < treeMenu.length; index++) {
         let temp = treeMenu[index];
+        let count = temp.content.length;
         console.log(temp);
         html += `<li>
-            <input type = "checkbox"/>${temp.title}
-            <ul>
-                <li style = "list-style : none;">${temp.content}</li>
-            </ul>
-        </li>`;
+            <input type = "checkbox"/>
+            <a href = "#">${temp.title}</a>
+            <ul>`;
+        for(let j = 0; j < count; j++) {
+            html += `<li style = "list-style : none;">${temp.content[j]}</li>`;
+        }
+        html += "</ul></li>";
         console.log(html);
     }
     console.log(html);
