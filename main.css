@@ -28,6 +28,9 @@ body {
     height : 1000px;
     box-shadow : 0px 0px 0px 3px #000000;
 }
+#main > #sidebar_close {
+    
+}
 #main > #sidebar > #sidebar_top {
     padding : 15px;
     display : flex;
@@ -56,23 +59,23 @@ body {
     position : relative;
     margin : 10px 15px;
 }
-/* #main > #sidebar > #search_box > img {
-    position : relative;
-    top : -4px;
-    display : inline-block;
-    vertical-align : middle; */
-    /* width : 60px;
+#main > #sidebar > #search_box > #menu_icon {
+    width : 30px;
     height : 30px;
-    text-align: center;
-    font-size : 1.5rem;
-} */
-#main > #sidebar > #search_box > img {
-    
+}
+#main > #sidebar > #search_box > #menu_icon > img {
+    width : 30px;
+    height : 30px;
+}
+#main > #sidebar > #search_box > #menu_icon:hover {
+    cursor : pointer;
+    background-color : #d9d9d9;
 }
 #main > #sidebar > #search_box > #input_search {
     /* position : absolute;
     left : 60px; */
     margin : 0px 15px;
+    padding : 0px 10px;
     width : 200px;
     height : 30px;
 }
@@ -81,14 +84,32 @@ body {
     right : 0px;
     width : 30px;
     height : 30px;
-    background-color: #d9d9d9;
+    /* background-color: #d9d9d9; */
+}
+#main > #sidebar > #search_box > #search_image:hover {
+    cursor : pointer;
+    background-color : #d9d9d9;
 }
 #main > #sidebar > #tree_menu {
-    margin : 0px 15px;
+    /* margin : 0px 15px; */
+    /* padding : 0px 15px; */
 }
 #main > #sidebar > #tree_menu > ul > li {
     list-style : none;
+    margin : 10px 0px;
 }
 #main > #sidebar > #tree_menu > ul > li > input {
     margin : 0px 10px;
+}
+#main > #sidebar > #tree_menu > ul > li > label {
+    margin-bottom : 5px;
+}
+#main > #sidebar > #tree_menu > ul > li > label:hover {
+    text-decoration : underline;
+}
+#main > #sidebar > #tree_menu > ul > li > .branch_open {
+ 
+}
+#main > #sidebar > #tree_menu > ul > li > .branch_close {
+    display : none;
 }
