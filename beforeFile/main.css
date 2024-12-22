@@ -1,0 +1,137 @@
+/* noto serif */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap'); */
+/* noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+* {
+    /* border : solid 1px red; */
+    margin : 0px;
+    padding: 0px;
+    box-sizing : border-box;
+    font-family : "Noto Sans KR";
+}
+body {
+    /* beige */
+    background-color : #f5f5dc;
+    height : 1080px;
+    font-size : 16px;
+}
+
+#header {
+    /* height : 80px; */
+}
+
+#main {}
+
+#main > #sidebar {
+    /* border : solid 1px red; */
+    width : 320px;
+    height : 1000px;
+    box-shadow : 0px 0px 0px 3px #000000;
+}
+#main > #sidebar_close {
+    transition-duration: 5s;
+    transform : translate(-30px, 0px);
+}
+#main > #sidebar > #sidebar_top {
+    padding : 15px;
+    display : flex;
+}
+#main > #sidebar > #sidebar_top > #three_Line_image {
+    margin-right : 15px;
+    width : 50px;
+    height : 50px;
+    background-color : #d9d9d9;   
+}
+#three_Line_image {
+    margin-right : 15px;
+    width : 50px;
+    height : 50px;
+    background-color : #d9d9d9; 
+}
+#main > #sidebar > #sidebar_top > a {
+    width : 225px;
+    height : 50px;
+    text-decoration : none;
+    text-align: center;
+    color : black;
+    font-size : 2.5rem;
+    font-weight : 400;
+    line-height: 120%;
+    letter-spacing: -1px;
+    /* font-size : 38px; */
+}
+#main > #sidebar > #search_box {
+    display : flex;
+    align-items: center;
+    position : relative;
+    margin : 10px 15px;
+}
+#main > #sidebar > #search_box > #menu_icon {
+    width : 30px;
+    height : 30px;
+}
+#main > #sidebar > #search_box > #menu_icon > img {
+    width : 30px;
+    height : 30px;
+}
+#main > #sidebar > #search_box > #menu_icon:hover {
+    cursor : pointer;
+    background-color : #d9d9d9;
+}
+#main > #sidebar > #search_box > #input_search {
+    margin : 0px 15px;
+    padding : 0px 10px;
+    width : 200px;
+    height : 30px;
+}
+#main > #sidebar > #search_box > #search_image {
+    position : absolute;
+    right : 0px;
+    width : 30px;
+    height : 30px;
+    /* background-color: #d9d9d9; */
+}
+#main > #sidebar > #search_box > #search_image:hover {
+    cursor : pointer;
+    background-color : #d9d9d9;
+}
+#main > #sidebar > #tree_menu {
+    /* margin : 0px 15px; */
+    /* padding : 0px 15px; */
+}
+#main > #sidebar > #tree_menu > ul > li {
+    list-style : none;
+    margin : 10px 0px;
+}
+#main > #sidebar > #tree_menu > ul > li > input {
+    margin : 0px 10px;
+}
+#main > #sidebar > #tree_menu > ul > li > div > label {
+    margin-bottom : 5px;
+}
+#main > #sidebar > #tree_menu > ul > li > div > label:hover {
+    cursor : pointer;
+    text-decoration : underline;
+}
+#main > #sidebar > #tree_menu > ul > li > .branch_open {
+    
+}
+.branch_open li:hover {
+    cursor : pointer;
+    text-decoration : underline;
+}
+#main > #sidebar > #tree_menu > ul > li > .branch_close {
+    display : none;
+}
+.up_arrow_icon {
+    transition-duration : 5s;
+    transform : rotate(180deg);
+}
+.down_arrow_icon {
+    transition-duration : 5s;
+}
+.test {
+    transform: rotate(90deg);
+    transition-duration: 1s;
+    transition-delay: 7s;
+}

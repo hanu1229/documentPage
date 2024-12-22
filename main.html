@@ -3,51 +3,22 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Page Title</title>
+        <title>기록 보관소</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-        <!-- <script src='main.js'></script> -->
     </head>
     <body>
-        <div id = header>
-
-        </div>
-        <div id = "main">
-            <div id = "sidebar">
-                <div id = "sidebar_top">
-                    <div id = "three_Line_image"></div>
-                    <a href = "">{기록 보관소}</a>
+        <div id = "wrap">
+            <!-- <div id = "header"></div> -->
+            <div id = "main">
+                <div id = "sideBar" class = "sideBar">
+                    
                 </div>
-                <div id = "search_box">
-                    <div id = "menu_icon"><img src = "./img/MenuIcon.svg" title = "MenuIcon" onclick = "sidebarClose()"/></div>
-                    <input id = "input_search" type = "text" placeholder = "검색..."/>
-                    <img id = "search_image" src = "./img/SearchIcon.svg" title = "SearchIcon"/>
-                </div>
-                <div id = "tree_menu">
-                    <ul style = "padding-left : 5px;">
-                        <!-- <li>
-                            <label>root1</label>
-                            <ul style = "padding-left : 40px;">
-                                <li>branch1-1</li>
-                                <li>branch1-2</li>
-                                <li>branch1-3</li>
-                                <li>branch1-4</li>
-                                <li>branch1-5</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <label>root2</label>
-                        </li>
-                        <li>
-                            <label>root3</label>
-                        </li>
-                        <li>
-                            <label>root4</label>
-                        </li>
-                    </ul> -->
+                <div id = "content">
+                    <button id = "toggleButton" style = "cursor : pointer;">Click</button>
                 </div>
             </div>
-            <div id = "content"></div>
+            <div id = "footer"></div>
         </div>
         <script src='main.js'></script>
     </body>
