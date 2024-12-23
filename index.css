@@ -10,10 +10,14 @@
     display : flex;
 }
 
-.sideBar {
-    margin-right : 2vw;
+/* #region sidebar 관련 CSS */
+
+.sidebar {
+    margin : 20px 2vw 20px 0px;
     width : 300px;
     height : 100vh;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius : 10px;
     box-shadow : 0px 0px 10px black;
     /* transition : property duration timing-function delay */
     /* 
@@ -25,6 +29,57 @@
     transition : width 1s ease 0s;
 }
 
-.closeSideBar {
+.close_Sidebar {
     width : 50px;
 }
+
+.sidebar_header {
+    padding : 10px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+.menu_icon {
+    text-align : center;
+}
+.menu_icon > img {
+    margin-right : 10px;
+    width : 30px;
+    height : 30px;
+    text-align : center;
+    cursor : pointer;
+}
+/* .title {
+    display : block;
+} */
+.title > a {
+    text-decoration : none;
+    font-size : 1.25rem;
+    font-weight : bold;
+}
+.title, .search_icon_on {
+    display : block;
+}
+.search_icon_on > img {
+    margin-left : 10px;
+    width : 30px;
+    height : 30px;
+    cursor : pointer;
+}
+.title_off, .search_icon_off {
+    display : none;
+}
+
+/* #endregion sideBar 관련 CSS */
+
+/* #region content 관련 CSS */
+
+.content {
+    margin : 20px 20px 20px 0px;
+    width : 100vw;
+    height : 100vh;
+    border-radius : 10px;
+    box-shadow : 0px 0px 10px black;
+}
+
+/* #endregion content 관련 CSS */
