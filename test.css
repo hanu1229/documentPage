@@ -1,0 +1,35 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#menu li {
+    margin: 5px 0;
+}
+
+/* 서브 메뉴 숨기기 */
+.submenu {
+    display: none;
+    margin-left: 20px;
+}
+
+/* 토글 버튼 */
+.toggle {
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+/* 활성화된 메뉴 */
+.open > .submenu {
+    display: block;
+}
+
+.open > .toggle {
+    transform: rotate(90deg);
+}
